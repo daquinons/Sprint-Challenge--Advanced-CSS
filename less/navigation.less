@@ -1,1 +1,37 @@
 // Navigation code here
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: @nav-bg;
+  opacity: 0.93;
+  border-bottom: 1px solid @nav-border;
+  .flex(column);
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: @main-font-color;
+  }
+
+  .web-title {
+    margin: 1.5rem;
+  }
+
+  .nav-links {
+    min-width: 40%;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media @phone {
+      min-width: 100%;
+      padding: 0 2rem;
+      justify-content: space-around;
+    }
+  }
+
+
+}

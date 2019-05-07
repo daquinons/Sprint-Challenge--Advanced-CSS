@@ -10,11 +10,20 @@ html {
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+  margin-top: 52px;
+
+  @media @phone {
+    margin-top: 47px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
@@ -26,6 +35,11 @@ h3 {
 }
 
 p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+a {
   font-size: 1.6rem;
   line-height: 1.4;
 }
